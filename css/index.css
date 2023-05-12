@@ -1,0 +1,170 @@
+header{
+    background-color: #3bc7ff;
+    color: #fff;
+
+    font-size: 1.8rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    position: fixed;
+    width: 100%;
+    /* o rem é o tamanho relativo ao tamanho do aparelho */
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html{
+    font-family: arial;
+    font-size: 62.5%;
+}
+
+footer{
+    background-color: #3bc7ff;
+    color: #fff;
+    text-align:justify;
+
+}
+
+.conteudo{
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 80%;
+    /* o Max-Width é um codigo para mostras a largura maxima */
+}
+.conteudo-topo{
+    font-size: 1.6rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 80%;
+    padding-top: 7rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    /* font-size é o tamanho da letra */
+}
+h2{
+    font-size: 1.9rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+figure{
+   text-align: center;
+
+}
+
+.imagem{
+    border-radius: 20px 20px 50px 20px;
+    width: 50%;
+    height: 30%;
+}
+
+@media(min-width: 280px) and (max-width: 800px){
+    .imagem{
+        border-radius: 20px 20px 50px 20px;
+        /* border-radius são as pontas da imagem. as pontas funcionam em sentido horario. */
+        width: 90%;
+        height: 70%;
+    }
+}
+#propaganda{
+    background-color: #fcff68;
+    width: 150px;
+    height: 100px;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    margin-top: 5rem;
+    z-index: 1;
+}
+
+#grid-conteudo{
+    background-color: #fcff68;
+}
+
+.grid{
+    display: grid;
+    /* o tipo grid é um modelo de grade */
+    /* o display é o espaço que o intem esta ocupando */
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1rf));
+    /* o repeat(auto-fill,minmax(px, rf)) é um codgo para determinar um tamanho, falando que ele tem um tapanho (auto-fill/px) mas se a tela diminuir ele ira fragmentar(minmax/fr) */
+    /*o fr é o fragmento, ele vai ver o objeto dentro daquele local e vai fragmentar do jeito que ele acha correto */
+    /* columns é um modelo em colunas dentro do tmplate */
+    grid-gap: 2px;
+    /* o grid-gap é o total de espaço entre as colunas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid div{
+    background-color: red;
+    text-align: center;
+    padding: 2px;
+    /* padding serve para aumentar o espaço do objeto */
+}
+
+#formulario{
+    background-color: #dcdcdc;
+}
+
+input{
+    border: solid;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#mensagem{
+    border: solid;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+#btn-limpar{
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#btn-enviar{
+    background-color: #008000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav{
+    text-align: right;
+    font-size: 1.6rem;
+    word-spacing: 10px;
+    margin-right: 5%;
+    padding-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #000
+}
